@@ -1,0 +1,17 @@
+
+*{
+  margin:0;
+  padding:0;
+}
+}.contenedor {
+  background-color: blueviolet;
+  display: inline-block;
+  width: 25%;
+  height: 15%;
+}
+
+.uno {
+  position: static;
+  border: 3px solid #73ad21;
+  top: 350px;
+}

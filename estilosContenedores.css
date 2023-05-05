@@ -1,0 +1,105 @@
+/*Selector Universal *: formateo a 0 toda la página*/
+* {
+  margin: 0;
+  padding: 0;
+}
+/*Selector BODY estilos a toda la página*/
+body {
+  background-color: black; /*fondo de color de toda la página*/
+  color: #fff; /*color de letra de toda la página*/
+}
+body h2 {
+  color: aliceblue; /*color de letra del selector h2 dentro de body*/
+  font-family: "Times New Roman", Times, serif; /*tipo de letra para h2*/
+  margin-top: 15px; /*defino margen superior al selector h2*/
+  margin-left: 30px; /*defino estilo margen izquierdo al selector h2*/
+}
+span {
+  /*float: right;*/
+  display: inline; /*muestre el línea el spam que afecta a h2*/
+  color: aqua; /*color del selector spam*/
+  font-size: 0.7em; /*tamaño de letra para el selector*/
+  font-style: italic; /*estilo de letra para el selector*/
+}
+.contenedor {
+  background-color: blueviolet; /*color de fondo del contenedor*/
+  display: inline-block; /*defino que se muestren los contenedores/cajas alineados y en block*/
+  width: 10%; /*defino ancho del contenedor/caja*/
+  height: 15%; /*defino el alto de la caja/contenedor*/
+  border: 2px solid #04272cc0; /*defino borde de color a los contenedores*/
+  box-shadow: 5px 6px #69594f8e; /*estilo sombreado a la derecha y hacia abajo del borde del contenedor*/
+  margin: 2%; /*margen entre los contenedores*/
+  padding: 5px; /*espacio del texto hacia el borde del contenedor*/
+}
+
+.amarillo {
+  background-color: #dfe20c;
+  opacity: 0.3; /*opacidad al color del fondo de la caja*/
+  position: absolute;
+  top: 0px; /*medida que indica cuanto baja desde el borde superior*/
+  /*top: 200px;*/
+  left: 0; /*medida que indica distancia desde el borde izquierdo de la página para ubicar la caja*/
+  width: 200px;
+  height: 100px;
+  border: 3px solid #e96711;
+}
+.verdePadre {
+  background-color: #8ff197;
+
+  position: fixed;
+  right: 150px; /*medida que indica distancia desde el borde inferior de la página para ubicar la caja*/
+  bottom: 200px; /*medida que indica distancia desde el borde derecho de la página para ubicar la caja*/
+  width: 250px;
+  height: 300px;
+  border: 3px solid #73ad21;
+
+  /*background-image: url("./Recursos/imgs/BeFunky-photo.jpg"); /*insertar una imagen con css
+  background-repeat: no-repeat;*/
+}
+.verdehijo {
+  margin-top: 30px;
+  background-image: url("./Recursos/imgs/BeFunky-photo.jpg"); /*insertar una imagen con css*/
+  width: 250px;
+  height: 191px;
+  border-radius: 75%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.rojo {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 250px;
+  border: 3px solid #a50b0b;
+  padding: 10px;
+  overflow: auto; /*estilo que controla el desbordamiento dentro de una caja, propiedad hidden recorta el texto dejando solo lo que se puede ver, scroll: agrega barra de desplazamiento, auto, visible es por defecto se ve todo el texto*/
+}
+.rojo > p {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  color: #dfe20c;
+  font-size: smaller;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: justify;
+}
+.azul {
+  position: static; /*position estática queda fijo después del elemento anterior en orden*/
+  top: 30px;
+  left: 20px;
+
+  width: 200px;
+  height: 350px;
+  border: 3px solid #1005a8;
+  background-color: #857fd3;
+}
+.violeta {
+  position: -webkit-sticky; /* Safari */
+  position: sticky; /*permite scrollear*/
+  top: 0;
+  width: auto;
+  height: auto;
+
+  border: 2px solid #850a6a;
+}
